@@ -1,3 +1,8 @@
 export default function Home() {
-  return <div>hello</div>;
+  return (
+    <div>
+      hello
+      <span className="flex flex-col text-blue-500 md:flex-row">world</span>
+    </div>
+  );
 }
