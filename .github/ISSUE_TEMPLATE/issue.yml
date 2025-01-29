@@ -6,7 +6,7 @@ body:
     attributes:
       label: ✨ 이슈 내용
       description: 이슈에 대한 전반적인 설명을 작성해주세요.
-      placeholder: 작업 배경, 참고 스레드 등을 작성해주시면 좋습니다.
+      placeholder: 작업 배경, 참고할 수 있는 스레드 링크 등을 작성해주시면 좋습니다.
     validations:
       required: true
   - type: textarea
