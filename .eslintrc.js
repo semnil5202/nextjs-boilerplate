@@ -24,10 +24,6 @@ module.exports = {
         groups: ['external', 'builtin', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
         pathGroups: [
           {
-            pattern: '@sds/**',
-            group: 'internal',
-          },
-          {
             pattern: '@/**',
             group: 'internal',
           },
@@ -51,7 +47,8 @@ module.exports = {
       'error',
       { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
     ],
-    '@typescript-eslint/consistent-type-imports': ['error'],
+    '@typescript-eslint/no-redeclare': 'error',
+    '@typescript-eslint/consistent-type-imports': 'error',
     'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
     'no-console': ['warn', { allow: ['warn', 'error', 'table'] }],
     'no-undef': 'off',
