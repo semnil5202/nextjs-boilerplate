@@ -11,11 +11,3 @@ jobs:
       - uses: hkusu/review-assign-action@v1
         with:
           assignees: ${{ github.actor }}
-  labeler:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check Labels
-        id: labeler
-        uses: jimschubert/labeler-action@v2
-        with:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
