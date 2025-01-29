@@ -6,5 +6,3 @@ export default function Home() {
     </div>
   );
 }
-
-// test pr - #3
