@@ -16,7 +16,7 @@ jobs:
       - name: Auto approve PR
         run: |
           PR_NUMBER=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
-          REVIEW_BODY="고생했다. 🎉👍🏽"
+          REVIEW_BODY="Approved by 000"
           curl -s -X POST \
             -H "Authorization: token ${{ secrets.ACCESS_TOKEN }}" \
             -H "Content-Type: application/json" \
